@@ -231,9 +231,10 @@ GameObject:
   - component: {fileID: 4433942057210488}
   - component: {fileID: 33144904916599870}
   - component: {fileID: 23649099192709106}
-  - component: {fileID: 1277996195}
   - component: {fileID: 1900766902}
   - component: {fileID: 1900766903}
+  - component: {fileID: 1277996195}
+  - component: {fileID: 3812088109736562199}
   m_Layer: 0
   m_Name: StarSparrow1
   m_TagString: Untagged
@@ -305,25 +306,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1277996195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510364872509504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df8c8a0198804a7881bc3070a349ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 15
-  xRange: 19.9
-  yRange: 14.51
-  positionPitchFactor: -0.8
-  controlPitchThrow: -15
-  positionYawFactor: 0.72
-  controlRollThrow: -30
 --- !u!54 &1900766902
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -353,6 +335,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.638825, y: 3.2560527, z: 10.850525}
   m_Center: {x: 0, y: -0.0000007748603, z: 0}
+--- !u!114 &1277996195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510364872509504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df8c8a0198804a7881bc3070a349ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 15
+  xRange: 19.9
+  yRange: 14.51
+  positionPitchFactor: -0.8
+  controlPitchThrow: -15
+  positionYawFactor: 0.72
+  controlRollThrow: -30
+--- !u!114 &3812088109736562199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510364872509504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d1a91061cff8349b756bda985aea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692945755674982
 GameObject:
   m_ObjectHideFlags: 0

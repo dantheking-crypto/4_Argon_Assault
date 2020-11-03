@@ -5,30 +5,33 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 public class Controller : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip("in ms^-1")] [SerializeField] float Speed = 20f;
     [Tooltip("in m")] [SerializeField] float xRange = 35f;
     [Tooltip("in m")] [SerializeField] float yRange = 35f;
+
+    [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -19/7f;
-    [SerializeField] float controlPitchThrow = -15f;
     [SerializeField] float positionYawFactor = 5/3f;
+    [Header("Control-throw Based")]
+    [SerializeField] float controlPitchThrow = -15f;
     [SerializeField] float controlRollThrow = -15f;
+    bool dying = false;
     // Start is called before the first frame update
     float xThrow, yThrow;
-    void Start()
-    {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        print("Player triggered something.");
-    }
+
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (!dying) {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
-
+    private void flagDying()
+    {
+        dying = true;
+    }
     private void ProcessRotation()
     {
         float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchThrow;
