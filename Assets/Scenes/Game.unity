@@ -197,12 +197,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 574591483}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &448979229 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 448979229, guid: f805c7b2f982faf43833878e4f22ae2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1277996193}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &473380961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,9 +1101,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1772598699}
     m_Modifications:
-    - target: {fileID: 448979229, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 622226754, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: m_Name
+      value: Bullets Left
       objectReference: {fileID: 0}
     - target: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_Name
@@ -1159,16 +1153,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23649099192709106, guid: f805c7b2f982faf43833878e4f22ae2a,
+    - target: {fileID: 387575620886001695, guid: f805c7b2f982faf43833878e4f22ae2a,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 57125df2e9117bb40a32c83b6390c301, type: 2}
-    - target: {fileID: 3812088109736562199, guid: f805c7b2f982faf43833878e4f22ae2a,
-        type: 3}
-      propertyPath: deathFX
-      value: 
-      objectReference: {fileID: 448979229}
+      propertyPath: m_Name
+      value: Bullets Right
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
 --- !u!1 &1304327863
